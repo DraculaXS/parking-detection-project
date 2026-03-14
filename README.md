@@ -75,6 +75,7 @@ pip install -r requirements.txt
 
 Training data should be organized as:
 
+
     train_data/
     ├── train/
     │   ├── empty/      # images of empty parking spaces
@@ -103,6 +104,43 @@ python train_cnn.py
 
 ---
 
+# Inference and Model Comparison
+
+Run detection and compare the performance of the two models.
+
+Compare both models (image + video)
+```bash
+python park_test.py --mode compare --test_type both
+```
+
+Run detection using only VGG16
+```bash
+python park_test.py --mode vgg --test_type both
+```
+
+Run detection using only the custom CNN
+```bash
+python park_test.py --mode cnn --test_type both
+```
+
+Compare models on images only
+```bash
+python park_test.py --mode compare --test_type image
+```
+
+Compare models on videos only
+```bash
+python park_test.py --mode compare --test_type video
+```
+
+The repository includes a comparison module that runs inference with multiple models on the same video stream and visualizes the results side-by-side.
+
+```bash
+python compare_models.py
+```
+
+---
+
 # Model Evaluation
 
 Example evaluation metrics:
@@ -113,16 +151,6 @@ Example evaluation metrics:
 | CNN | 95.73% |
 
 The lightweight CNN achieved slightly better performance in this dataset while requiring significantly fewer parameters.
-
----
-
-# Model Comparison
-
-The repository includes a comparison module that runs inference with multiple models on the same video stream and visualizes the results side-by-side.
-
-```bash
-python compare_models.py
-```
 
 ---
 
