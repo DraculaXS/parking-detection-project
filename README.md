@@ -6,7 +6,7 @@ The project was developed as an experimental learning project to explore deep le
 
 ---
 
-# Project Goals
+## Project Goals
 
 The goals of this project are:
 
@@ -17,11 +17,11 @@ The goals of this project are:
 
 ---
 
-# Models
+## Models
 
 Two models are implemented and compared:
 
-##  VGG16 (Transfer Learning)
+###  VGG16 (Transfer Learning)
 
 A pretrained VGG16 network is used as a feature extractor. The final layers are replaced with a small classifier for binary classification.
 
@@ -32,7 +32,7 @@ Advantages:
 
 ---
 
-##  Lightweight CNN (From Scratch)
+###  Lightweight CNN (From Scratch)
 
 A small CNN architecture is implemented and trained from scratch as a baseline.
 
@@ -44,7 +44,7 @@ Advantages:
 
 ---
 
-# Machine Learning Pipeline
+## Machine Learning Pipeline
 
 The system follows a typical machine learning workflow:
 
@@ -56,7 +56,7 @@ The system follows a typical machine learning workflow:
 
 ---
 
-# Installation
+## Installation
 Clone the repository:
 
 ```bash
@@ -71,10 +71,9 @@ pip install -r requirements.txt
 ```
 ---
 
-# Dataset Structure
+## Dataset Structure
 
-Training data should be organized as:
-
+Training data should be organized as follows:
 
     train_data/
     ├── train/
@@ -88,7 +87,7 @@ Each folder contains images of parking spaces.
 
 ---
 
-# Training
+## Training
 
 Train the VGG16 model:
 
@@ -103,8 +102,7 @@ python train_cnn.py
 ```
 
 ---
-
-# Inference and Model Comparison
+## Inference and Model Comparison
 
 Run detection and compare the performance of the two models.
 
@@ -133,15 +131,15 @@ Compare models on videos only
 python park_test.py --mode compare --test_type video
 ```
 
-The repository includes a comparison module that runs inference with multiple models on the same video stream and visualizes the results side-by-side.
+---
+
+## Model Evaluation
+
+model_comparison.py evaluates the trained models on the test dataset and compares their performance using accuracy, classification reports, and confusion matrices.
 
 ```bash
 python compare_models.py
 ```
-
----
-
-# Model Evaluation
 
 Example evaluation metrics:
 
@@ -154,7 +152,7 @@ The lightweight CNN achieved slightly better performance in this dataset while r
 
 ---
 
-# My Contributions
+## My Contributions
 
 My main contributions include:
 
@@ -165,19 +163,19 @@ My main contributions include:
 
 ---
 
-# Disclaimer
+## Disclaimer
 
 This project was developed for learning purposes and experimentation with deep learning techniques in computer vision.
 
 ---
 
-# License
+## License
 
 This project is released under the MIT License for the modifications and additional code contributed in this repository.
 
 ---
 
-# Acknowledgements
+## Acknowledgements
 
 This project was adapted from an earlier open-source parking detection implementation that served as a learning reference for this work.
 
