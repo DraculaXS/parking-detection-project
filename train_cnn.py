@@ -52,7 +52,7 @@ model.summary()
 # Compile model
 model.compile(
     loss="categorical_crossentropy",
-    optimizer=optimizers.Adam(learning_rate=0.001),  # CNN用Adam效果更好
+    optimizer=optimizers.Adam(learning_rate=0.001),  
     metrics=["accuracy"]
 )
 
