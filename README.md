@@ -91,11 +91,15 @@ Each folder contains images of parking spaces.
 
 Train the VGG16 model:
 
-python src/train_vgg16.py
+```bash
+python train_vgg16.py
+```
 
 Train the custom CNN:
 
-python src/train_cnn.py
+```bash
+python train_cnn.py
+```
 
 ---
 
@@ -117,7 +121,7 @@ The lightweight CNN achieved slightly better performance in this dataset while r
 The repository includes a comparison module that runs inference with multiple models on the same video stream and visualizes the results side-by-side.
 
 ```bash
-python src/compare_models.py
+python compare_models.py
 ```
 
 ---
