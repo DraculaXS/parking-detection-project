@@ -75,13 +75,13 @@ pip install -r requirements.txt
 
 Training data should be organized as:
 
-train_data/
-├── train/
-│   ├── empty/      # images of empty parking spaces
-│   └── occupied/   # images of occupied parking spaces
-└── test/
-    ├── empty/      # test images of empty spaces
-    └── occupied/   # test images of occupied spaces
+    train_data/
+    ├── train/
+    │   ├── empty/      # images of empty parking spaces
+    │   └── occupied/   # images of occupied parking spaces
+    └── test/
+        ├── empty/      # test images of empty spaces
+        └── occupied/   # test images of occupied spaces
 
 Each folder contains images of parking spaces.
 
