@@ -92,7 +92,7 @@ Each folder contains images of parking spaces.
 Train the VGG16 model:
 
 ```bash
-python train_vgg16.py
+python train.py
 ```
 
 Train the custom CNN:
