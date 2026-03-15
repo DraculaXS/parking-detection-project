@@ -150,6 +150,8 @@ Example evaluation metrics:
 
 The lightweight CNN achieved slightly better performance in this dataset while requiring significantly fewer parameters.
 
+Simpler models generalize better on small datasets. VGG16's complexity leads to overfitting despite transfer learning. With more data, VGG16 would likely surpass CNN as its capacity can be fully utilized.
+
 ---
 
 ## My Contributions
